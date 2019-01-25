@@ -27,7 +27,7 @@ class KnowledgeBase(object):
         check if fact is an instance of Fact - if it is, then append fact
         """
         print("Asserting {!r}".format(fact))
-        if(isinstance(fact, Fact)):
+        if factq(fact.name):
             self.facts.append(fact)
 
         
